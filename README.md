@@ -1,9 +1,12 @@
 dotfiles
 ========
 
-- Base system
+Base system
+-----------
 
-Components:
+- Components:
+
 1. firefox
+2.
 
 Archlinux configuration files
