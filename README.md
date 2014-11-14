@@ -69,7 +69,7 @@ Base system
 pacman -S the_silver_searcher
 pacman -S ctags
 gem install github-markup
-use spf13-vim insted of vimified
+use spf13-vim insted of vimified and install: https://github.com/Lokaltog/powerline-fonts
 56. aria2 - tem um ficheiro de configuraçao em ~/.aria2/aria2.conf
 57. uget - configurar para uso com aria2
 58. vim-spell-pt
