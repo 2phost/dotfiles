@@ -11,26 +11,41 @@ Base system
 -----------
 
 1. firefox : browser1
-2. dwb : browser2
-3. zathura : pdfreader
-4. zsh : shell
-5. lilyterm : terminal emulator
-6. arandr : display management
-7. awesome : windows manager
-8. deluge : torrent client
-9. udevil : mount support
-10. rox : file manager 1
-11. pcmanfm : file manager 2
-12. emacs-nox : text editor terminal
-13. beaver : text editor gui
-14. feh : image viewer
-15. auctex : latex emacs
+2. luakit : browser2 for fast things
+3. qpdfview : pdfreader
+4. pdfmod : insert, remove, rotate and reorder pdf pages
+5. zsh : shell
+6. termite : terminal emulator
+7. arandr : display management
+8. awesome : windows manager
+9. aria2 : command-line torrent client
+10. uget : download manager which car use aria2 by enabling a built-in pugin
+11. pcmanfm : file manager
+12. acpid : power event management
+13. udevil : automatically mount
+14. emacs-nox : terminal text editor
+15. sublime-text : graphical text editor
+16. viewnior : image viewer
+17. cpupower : processor power management
+18. lxappearance : GTK+ theme switcher
+19. gnome-themes-standard : GTK+ 3 which includes the Adwaita theme (works for GTK+2 too)
+20. slim : login manager, includes slimlock
+21. xautolock : used to call slimlock after T time - File .xinitrc: xautolock -locker slimlock -time 3&
+22. zotero : Citation & Bibliography Processing
+
+//
+awesome-revelation-git
+// Bluetooth - TODO
+23. bluez
+24. bluez-util
+25. blueman
+
+23. conky-lua : conky with lua binding SE FUNCIONAR BEM
+
+
+16. auctex : latex emacs
 16. texlive-core : latex environment
 17. texlive-latexextra : addons for latex
-18. cpupower : Processor power management
-19. acpid : Power event management
-20. lxappearance : GTK+ theme switcher
-21. gnome-themes-standard : GTK+ 3 which includes the Adwaita theme (works for GTK+2 too))
 22. mutt : Client mail terminal
 23. thunderbird : Client mail
 24. yed : Diagrams Editor
@@ -41,7 +56,6 @@ Base system
 29. mpc : controling MPD
 29. mopidy : advanced mpd
 30. ncmpcpp : MPD client
-31. xscreensaver-arch-logo : (edit the PKGBUILD and remove the gdm makedepend and the "--with-login-manager" flag) lock screen
 32. aspell-pt
 33. aspell-en
 34. markdown
@@ -61,6 +75,7 @@ Base system
 48. nixnote2-git - notes application, with evernote sync
 49. papi-git
 50. pidgin - messenger
+50. a) pidgin-gnome-keyring - secure password: needs to be activated as a plugin
 51. xboxdrv - joystick, eg, # xboxdrv --evdev /dev/input/event12 --evdev-absmap ABS_X=DPAD_X,ABS_Y=DPAD_Y --evdev-keymap BTN_A=A,BTN_B=B,BTN_X=Y,BTN_C=X,BTN_TL=LT,BTN_Y=LB,BTN_TR=RT,BTN_Z=RB,BTN_TR2=Start --mimic-xpad -s
 52. Lix - Editor like latex
 53. moc - Better music player
@@ -70,11 +85,10 @@ pacman -S the_silver_searcher
 pacman -S ctags
 gem install github-markup
 use spf13-vim insted of vimified and install: https://github.com/Lokaltog/powerline-fonts
-56. aria2 - tem um ficheiro de configuraçao em ~/.aria2/aria2.conf
-57. uget - configurar para uso com aria2
 58. vim-spell-pt
-59. sublime-text - text editor
 60. subliminal-git - subtitle downloader
+61. cups - printer : sudo systemctl enable cups-browsed
+62. system-config-printer - printers management sudo system-config-printer
 
 Aur
 ---
@@ -83,7 +97,6 @@ cloudsn 0.10.2-4
 compton-git 0.1_beta2.33.g3a3e138-1
 cower 11-3
 dropbox 2.10.30-1
-dwarffortress-myne 0.40.01-1
 eminent-git 2014.03.09.ga5083d8-1
 guacamelee-hib 1393037377-1
 hadoop 2.5.1-1
